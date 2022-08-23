@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Strategia</name>
+    </assembly>
+    <members>
+        <member name="T:Strategia.AdminResizer">
+            <summary>
+            Special MonoBehaviour to fix admin building UI.
+            </summary>
+        </member>
+        <member name="T:Strategia.DepartmentFixer">
+            <summary>
+            Special MonoBehaviour to fix up the departments.
+            </summary>
+        </member>
+        <member name="T:Strategia.ConfigExpander">
+            <summary>
+            Special MonoBehaviour for expanding special config files into strategies.
+            </summary>
+        </member>
+        <member name="T:Strategia.CurrencyPopup">
+            <summary>
+            MonoBehaviour to show text for currency being gained/spent.
+            </summary>
+        </member>
+        <member name="T:Strategia.AdvanceEffect">
+            <summary>
+            Gives an advance
+            </summary>
+        </member>
+        <member name="T:Strategia.CareerParameterOverride">
+            <summary>
+            Allows overriding of career parameters.
+            </summary>
+        </member>
+        <member name="T:Strategia.ContractEffect.ContractChecker">
+            <summary>
+            Separate MonoBehaviour for checking, as the strategy system only gets update calls in flight.
+            </summary>
+        </member>
+        <member name="T:Strategia.CurrencyOperationByContract">
+            <summary>
+            Special CurrencyOperation that gives a modifier for specific contracts.
+            </summary>
+        </member>
+        <member name="T:Strategia.CurrencyOperationByTrait">
+            <summary>
+            Special CurrencyOperation that gives a modifier for specific trait.
+            </summary>
+        </member>
+        <member name="T:Strategia.CurrencyOperationCrewedLaunch">
+            <summary>
+            Special CurrencyOperation that gives a modifier for crewed launches.
+            </summary>
+        </member>
+        <member name="T:Strategia.CurrencyOperationFacilityDestruction">
+            <summary>
+            Special CurrencyOperation that gives a modifier for facility destruction.
+            </summary>
+        </member>
+        <member name="T:Strategia.CurrencyOperationFacilityUpgrade">
+            <summary>
+            Special CurrencyOperation only for facility upgrades
+            </summary>
+        </member>
+        <member name="T:Strategia.CurrencyOperationKerbalRecovery">
+            <summary>
+            Special CurrencyOperation that multiplies by the amount of XP gained by Kerbals.
+            </summary>
+        </member>
+        <member name="T:Strategia.CurrencyOperationNonZero">
+            <summary>
+            Special CurrencyOperation that only acts on non-zero values.
+            </summary>
+        </member>
+        <member name="T:Strategia.CurrencyOperationPerTech">
+            <summary>
+            Special CurrencyOperation that multiplies by the number of unresearched technologies.
+            </summary>
+        </member>
+        <member name="T:Strategia.CurrencyOperationRandomized">
+            <summary>
+            Special CurrencyOperation that gives a random modifier.
+            </summary>
+        </member>
+        <member name="T:Strategia.CurrencyOperationTextOverride">
+            <summary>
+            Special CurrencyOperation that overrides the text.
+            </summary>
+        </member>
+        <member name="T:Strategia.CurrencyOperationUnmanned">
+            <summary>
+            Special CurrencyOperation that gives a modifier for unmanned vessels.
+            </summary>
+        </member>
+        <member name="T:Strategia.CurrencyOperationWithPopup">
+            <summary>
+            Special CurrencyOperation with a currency popup.
+            </summary>
+        </member>
+        <member name="T:Strategia.ExplorationFundingEffect">
+            <summary>
+            Rewards for exploring biomes.
+            </summary>
+        </member>
+        <member name="T:Strategia.LevelBooster">
+            <summary>
+            Strategy for increasing the a Kerbal's level while the strategy is active.
+            </summary>
+        </member>
+        <member name="T:Strategia.MediaStar">
+            <summary>
+            Strategy for giving an extra experience level for media stars.
+            </summary>
+        </member>
+        <member name="M:Strategia.MediaStar.#cctor">
+            <summary>
+            Static initializer to hack the kerbal experience/flight log system to add our entries.
+            </summary>
+        </member>
+        <member name="T:Strategia.NewKerbalExperience">
+            <summary>
+            Strategy for giving experience to new hires.
+            </summary>
+        </member>
+        <member name="M:Strategia.NewKerbalExperience.#cctor">
+            <summary>
+            Static initializer to hack the kerbal experience/flight log system to add our entries.
+            </summary>
+        </member>
+        <member name="T:Strategia.OrbitWeightBonus">
+            <summary>
+            Strategy for awarding a bonus 
+            </summary>
+        </member>
+        <member name="T:Strategia.ReputationTicker">
+            <summary>
+            Strategy for adding periodic reputation.
+            </summary>
+        </member>
+        <member name="T:Strategia.ReputationTicker.ReputationUpdater">
+            <summary>
+            Separate MonoBehaviour for checking, as the strategy system only gets update calls in flight.
+            </summary>
+        </member>
+        <member name="T:Strategia.ScienceBooster">
+            <summary>
+            Strategy effect for boosting science for certain conditions. 
+            </summary>
+        </member>
+        <member name="T:Strategia.VesselValueImprover">
+            <summary>
+            Strategy effect that improves vessel values.
+            </summary>
+        </member>
+        <member name="M:Strategia.UpgradeableStrategy.Initialize">
+            <summary>
+            Initialization function.  Would do this in the constructor, but the base class's constructor
+            doesn't set anything, this making inheritance rather difficult.
+            </summary>
+        </member>
+        <member name="T:Strategia.StrategyNotifier">
+            <summary>
+            Special ScenarioModule to notify on strategy availability changes.
+            </summary>
+        </member>
+        <member name="M:Strategia.VesselUtil.GetVesselCrew(Vessel)">
+            <summary>
+            Gets the vessel crew and works for EVAs as well
+            </summary>
+            <param name="v"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
